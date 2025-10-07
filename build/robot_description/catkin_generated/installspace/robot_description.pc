@@ -1,0 +1,8 @@
+prefix=/home/xlh/eRob3_ws/install
+
+Name: robot_description
+Description: Description of robot_description
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

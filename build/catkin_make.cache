@@ -1,0 +1,2 @@
+robot_bridge:robot_bringup:robot_control:robot_description
+-DCATKIN_DEVEL_PREFIX=/home/xlh/eRob3_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xlh/eRob3_ws/install -G Unix Makefiles

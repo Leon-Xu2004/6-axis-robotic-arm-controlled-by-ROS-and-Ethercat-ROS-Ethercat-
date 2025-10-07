@@ -1,0 +1,8 @@
+prefix=/home/xlh/eRob3_ws/install
+
+Name: robot_motion
+Description: Description of robot_motion
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrobot_motion
+Requires: roscpp std_msgs

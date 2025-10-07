@@ -1,0 +1,4 @@
+<launch>
+  <!-- 启动 Python 串口通信节点 -->
+  <node name="YS_H7Multi_command" pkg="robot_bridge" type="YS_H7Multi_command.py" output="screen"> </node>
+</launch>

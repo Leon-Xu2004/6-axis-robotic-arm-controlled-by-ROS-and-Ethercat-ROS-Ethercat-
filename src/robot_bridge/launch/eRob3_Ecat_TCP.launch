@@ -1,0 +1,5 @@
+<launch>
+    
+    <node pkg="robot_bridge" type="eRob3_Ecat_TCP.py" name="eRob3_Ecat_TCP" output="screen" />
+
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+  <!-- 加载 URDF 模型 -->
+  <param name="robot_description" command="$(find xacro)/xacro '$(find robot_description)/urdf/erobot3.urdf'" />
+
+  <!-- 可视化 -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_description)/rviz/erobot3.rviz" />
+
+  <!-- 末端执行器路径可视化 -->
+  <node pkg="robot_description" type="eepath_node.py" name="eepath_solver_node" output="screen" />
+
+</launch>

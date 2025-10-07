@@ -1,0 +1,8 @@
+prefix=/home/xlh/eRob3_ws/devel
+
+Name: robot_bridge
+Description: Description of robot_bridge
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

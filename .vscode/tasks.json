@@ -1,0 +1,20 @@
+{
+    // 任务配置版本
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "catkin_make:debug", // 任务标签，用于在 VSCode 中显示
+            "type": "shell",  // 任务类型，选择 shell，表示在 shell 中执行命令
+            "command": "catkin_make", // 要执行的命令，这里是 catkin_make
+            "args": [], // 可以在这里添加参数，例如 "-DCATKIN_WHITELIST_PACKAGES=package1;package2"
+            "group": {
+                "kind": "build", // 任务类别，标记为构建任务
+                "isDefault": true // 设置此任务为默认构建任务
+            },
+            "presentation": {
+                "reveal": "always" // 始终在终端中显示输出
+            },
+            "problemMatcher": "$msCompile" // 用于匹配编译中的问题，VSCode 默认的编译问题匹配器
+        }
+    ]
+}
