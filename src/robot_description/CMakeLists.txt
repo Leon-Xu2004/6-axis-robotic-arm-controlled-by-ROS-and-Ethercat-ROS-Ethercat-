@@ -18,3 +18,7 @@ catkin_install_python(PROGRAMS
   src/eepath_node.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+catkin_install_python(PROGRAMS
+  src/workspace.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

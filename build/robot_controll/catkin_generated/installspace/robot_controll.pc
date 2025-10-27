@@ -1,0 +1,8 @@
+prefix=/home/leon-xu/eRob3_ws/install
+
+Name: robot_controll
+Description: Description of robot_controll
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

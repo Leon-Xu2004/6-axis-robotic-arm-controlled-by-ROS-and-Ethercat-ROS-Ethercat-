@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- 启动 robot_bridge 节点 -->
+    <include file="$(find robot_bridge)/launch/robot_bridge.launch" />
+
+    <!-- 启动 robot_description 节点 -->
+    <include file="$(find robot_description)/launch/robot_description.launch" />
+
+    <!-- 启动 robot_controll 节点 -->
+    <include file="$(find robot_controll)/launch/robot_controll.launch" />
+</launch>

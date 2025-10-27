@@ -1,4 +1,4 @@
-prefix=/home/xlh/eRob3_ws/install
+prefix=/home/leon-xu/eRob3_ws/install
 
 Name: robot_bridge
 Description: Description of robot_bridge

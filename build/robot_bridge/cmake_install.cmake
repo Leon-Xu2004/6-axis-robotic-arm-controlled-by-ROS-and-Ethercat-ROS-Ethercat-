@@ -1,8 +1,8 @@
-# Install script for directory: /home/xlh/eRob3_ws/src/robot_bridge
+# Install script for directory: /home/leon-xu/eRob3_ws/src/robot_bridge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xlh/eRob3_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/leon-xu/eRob3_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,35 +37,30 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/leon-xu/eRob3_ws/build/robot_bridge/catkin_generated/installspace/robot_bridge.pc")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xlh/eRob3_ws/build/robot_bridge/catkin_generated/installspace/robot_bridge.pc")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_bridge/cmake" TYPE FILE FILES
-    "/home/xlh/eRob3_ws/build/robot_bridge/catkin_generated/installspace/robot_bridgeConfig.cmake"
-    "/home/xlh/eRob3_ws/build/robot_bridge/catkin_generated/installspace/robot_bridgeConfig-version.cmake"
+    "/home/leon-xu/eRob3_ws/build/robot_bridge/catkin_generated/installspace/robot_bridgeConfig.cmake"
+    "/home/leon-xu/eRob3_ws/build/robot_bridge/catkin_generated/installspace/robot_bridgeConfig-version.cmake"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_bridge" TYPE FILE FILES "/home/xlh/eRob3_ws/src/robot_bridge/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_bridge" TYPE FILE FILES "/home/leon-xu/eRob3_ws/src/robot_bridge/package.xml")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_bridge" TYPE PROGRAM FILES "/home/xlh/eRob3_ws/build/robot_bridge/catkin_generated/installspace/YS_H7Multi_usart.py")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_bridge" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_bridge/catkin_generated/installspace/YS_H7Multi_usart.py")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_bridge" TYPE PROGRAM FILES "/home/xlh/eRob3_ws/build/robot_bridge/catkin_generated/installspace/YS_H7Multi_command.py")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_bridge" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_bridge/catkin_generated/installspace/YS_H7Multi_command.py")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_bridge" TYPE PROGRAM FILES "/home/xlh/eRob3_ws/build/robot_bridge/catkin_generated/installspace/eRob3_Ecat_TCP.py")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_bridge" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_bridge/catkin_generated/installspace/eRob3_Ecat_TCP.py")
 endif()
 
