@@ -1,0 +1,40 @@
+manipulator_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - Joint1
+    - Joint2
+    - Joint3
+    - Joint4
+    - Joint5
+    - Joint6
+  gains:
+    Joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

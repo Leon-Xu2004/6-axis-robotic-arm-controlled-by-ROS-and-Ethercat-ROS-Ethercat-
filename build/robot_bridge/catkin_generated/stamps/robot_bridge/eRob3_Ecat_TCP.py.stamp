@@ -36,28 +36,39 @@ def receiver_thread(sock, pub, stop_event, current_angles, have_actual_once, loc
     joint_state.name = JOINT_NAMES
     joint_state.position = [0.0] * NUM_AXES
     buf = b""
+    rate = rospy.Rate(60)   # 控制发布频率为 60 Hz
     try:
         while not rospy.is_shutdown() and not stop_event.is_set():
             r, _, _ = select.select([sock], [], [], 0.05)
-            if not r: continue
+            if not r:
+                rate.sleep()
+                continue
             data = sock.recv(4096)
             if not data:
-                rospy.loginfo("TCP 连接关闭（接收）"); break
+                rospy.loginfo("TCP 连接关闭（接收）")
+                break
+
             buf += data
             while b"\n" in buf:
                 line, buf = buf.split(b"\n", 1)
                 line = line.decode().strip()
                 joint_state = process_data(line, joint_state)
                 joint_state.header.stamp = rospy.Time.now()
+
                 # 同步共享角度
                 with lock:
                     current_angles[:] = joint_state.position[:]
                     have_actual_once.set()
+
                 pub.publish(joint_state)
+
+            rate.sleep()  # ⬅️ 控制循环速率
+
     except Exception as e:
         rospy.logwarn("接收线程异常：%s", e)
     finally:
         rospy.loginfo("接收线程退出")
+
 
 
 def sender_thread(sock, stop_event, current_angles, have_actual_once, lock):

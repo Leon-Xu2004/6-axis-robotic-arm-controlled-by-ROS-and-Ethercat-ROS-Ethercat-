@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("eRobot3_moveit_config")
 subdirs("robot_bringup")
 subdirs("robot_controll")
 subdirs("robot_bridge")

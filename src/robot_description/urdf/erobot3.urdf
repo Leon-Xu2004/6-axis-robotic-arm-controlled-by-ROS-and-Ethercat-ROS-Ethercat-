@@ -43,7 +43,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/base_link.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -73,7 +73,7 @@
     <collision>
       <origin xyz="0 0 0.1435" rpy="0 0 -1.5708" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/Link1.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_Link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -112,7 +112,7 @@
     <collision>
       <origin xyz="0 0 0.098" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/Link2.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_Link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -161,7 +161,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 3.1416 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/Link3.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_Link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -200,7 +200,7 @@
     <collision>
       <origin xyz="0 0 -0.0860" rpy="0 3.1416 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/Link4.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_Link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -239,7 +239,7 @@
     <collision>
       <origin xyz="0 0 0.086" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/Link5.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_Link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -278,7 +278,7 @@
     <collision>
       <origin xyz="0 0 0.0725" rpy="0 3.1416 0" />
       <geometry>
-        <mesh filename="package://robot_description/meshes/Link6.STL" />
+        <mesh filename="package://robot_description/meshes/simplified_Link6.STL" />
       </geometry>
     </collision>
   </link>

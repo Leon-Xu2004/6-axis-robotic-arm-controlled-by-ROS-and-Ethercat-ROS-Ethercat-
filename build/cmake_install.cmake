@@ -146,6 +146,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/leon-xu/eRob3_ws/build/gtest/cmake_install.cmake")
+  include("/home/leon-xu/eRob3_ws/build/eRobot3_moveit_config/cmake_install.cmake")
   include("/home/leon-xu/eRob3_ws/build/robot_bringup/cmake_install.cmake")
   include("/home/leon-xu/eRob3_ws/build/robot_controll/cmake_install.cmake")
   include("/home/leon-xu/eRob3_ws/build/robot_bridge/cmake_install.cmake")

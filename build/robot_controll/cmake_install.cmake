@@ -61,10 +61,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_controll" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_controll/catkin_generated/installspace/trajectory_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_controll" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_controll/catkin_generated/installspace/motion_node.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_controll" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_controll/catkin_generated/installspace/main_node.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/robot_controll" TYPE PROGRAM FILES "/home/leon-xu/eRob3_ws/build/robot_controll/catkin_generated/installspace/target_marker_node.py")
 endif()
 

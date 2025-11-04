@@ -1,11 +1,15 @@
 <launch>
 
-    <!-- 启动 robot_bridge 节点 -->
-    <include file="$(find robot_bridge)/launch/robot_bridge.launch" />
+  <!-- 启动 robot_bridge -->
+  <include file="$(find robot_bridge)/launch/robot_bridge.launch" />
 
-    <!-- 启动 robot_description 节点 -->
-    <include file="$(find robot_description)/launch/robot_description.launch" />
+  <!-- 启动 robot_description，加载机械臂模型 -->
+  <include file="$(find robot_description)/launch/robot_description.launch" />
 
-    <!-- 启动 robot_controll 节点 -->
-    <include file="$(find robot_controll)/launch/robot_controll.launch" />
+  <!-- 延时 3 秒后再启动 robot_controll -->
+  <node pkg="roslaunch" type="roslaunch" name="delay_3s" args="sleep 3" output="screen"/>
+
+  <!-- 启动 robot_controll -->
+  <include file="$(find robot_controll)/launch/robot_controll.launch" />
+
 </launch>

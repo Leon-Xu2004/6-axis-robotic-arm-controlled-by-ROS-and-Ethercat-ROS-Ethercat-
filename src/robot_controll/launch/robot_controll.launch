@@ -1,7 +1,13 @@
 <!-- robot_controll/launch/bringup.launch -->
 <launch>
+
+  <!-- 先启动 MoveIt 环境 -->
+  <!-- <include file="$(find eRobot3_moveit_config)/launch/demo.launch" /> -->
   <node pkg="robot_controll" type="fk_node.py"          name="fk_node"          output="screen"/>
   <node pkg="robot_controll" type="ik_node.py"          name="ik_node"          output="screen"/>
-  <node pkg="robot_controll" type="trajectory_node.py"  name="trajectory_node"  output="screen"/>
+  <node pkg="robot_controll" type="motion_node.py"      name="motion_node"      output="screen"/>
   <!-- <node pkg="robot_controll" type="main_node.py"        name="main_controller"  output="screen"/> -->
+  <node pkg="robot_controll" type="target_marker_node.py"      name="target_marker_node"      output="screen"/>
+
+
 </launch>

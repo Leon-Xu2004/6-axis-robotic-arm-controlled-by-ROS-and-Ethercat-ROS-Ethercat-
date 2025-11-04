@@ -1,2 +1,2 @@
-robot_bridge:robot_bringup:robot_controll:robot_description
+eRobot3_moveit_config:robot_bridge:robot_bringup:robot_controll:robot_description
 -DCATKIN_DEVEL_PREFIX=/home/leon-xu/eRob3_ws/devel -DCMAKE_INSTALL_PREFIX=/home/leon-xu/eRob3_ws/install -G Unix Makefiles
