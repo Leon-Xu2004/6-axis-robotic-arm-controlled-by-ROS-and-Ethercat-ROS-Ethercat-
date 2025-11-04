@@ -1,6 +1,6 @@
 # eRob3_ws（v2.1.1）
 
-完整的 ROS catkin 工作空间，用于 eRob3 六自由度机械臂的通讯、运动学求解与关节空间轨迹规划。本版将路径规划核心迁移至 OMPL，默认采用 RRTConnect 并带有基于 FCL 的碰撞检测。
+完整的 ROS catkin 工作空间，用于 eRob3 六自由度机械臂的通讯、运动学求解与关节空间路径规划。本版将路径规划核心迁移至 OMPL，默认采用 RRTConnect 并带有基于 FCL 的碰撞检测。
 
 ---
 
@@ -13,6 +13,7 @@
 - [常见问题](#常见问题)
 - [版本记录](#版本记录)
 - [开发提示](#开发提示)
+- [效果演示](#效果演示)
 
 ---
 
@@ -148,6 +149,12 @@ roslaunch robot_controll robot_controll.launch
 
 - 通过 `roslaunch robot_controll robot_controll.launch` 单独调试运动学与规划模块；在 RViz 中可实时查看 `/planned_path`、`/fcl_obstacles_array` 等话题。  
 - 推荐使用 `rosrun rqt_graph rqt_graph` 理解话题流向，配合 `rostopic echo` 检查接口数据。  
-- 若需要切换 OMPL 算法，可在 `motion_node` 对应的 Launch/参数服务器上修改 `~planner` 字符串。  
+- 若需要切换 OMPL 算法，可在 `motion_node` 对应的 Launch/参数服务器上修改 `~planner` 字符串。
+
+## 效果演示
+
+[![点击观看演示视频](Docs/images/demo_cover.png)]([https://www.bilibili.com/video/BVxxxxxxxxx/](https://www.bilibili.com/video/BV1bT1MBSEFA/?spm_id_from=333.1387.homepage.video_card.click&vd_source=617430d770257fea0470c52e784c9e19
+))
+
 - `robot_description/src/workspace.py` 可用于离线生成机械臂可达空间点云，辅助规划环境设计。
 
